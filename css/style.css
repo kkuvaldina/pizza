@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'krabby_pattyregular';
+    src: url('krabby_patty-webfont.woff2') format('woff2'),
+         url('krabby_patty-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+	margin: 20px 100px;
+}
+
+html {
+	background-image: url(../img/bath_sponge.jpg);
+	font-family: 'krabby_pattyregular';
+	font-size: 25px;
+	color: #383ADE;
+}
+
+h1 {
+	text-align: center
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+}
+
+.sponge-bob {
+	width: 350px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul.menu li {
+	display: inline-block;
+	margin: 35px;
+}
+
+ul.menu li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #383ADE;
+	font-size: 35px;
+	padding: 15px;
+
+}
+
+ul.menu li a:hover, ul.menu li a.active {
+	color: #019415;
+	cursor: pointer;
+	transition-duration: 500ms;
+	background-image: url("../img/starfish.svg");
+	background-repeat: no-repeat;
+	font-weight: bold
+}
+
+
+.client-info input[type=text] {
+	font-family: 'krabby_pattyregular';
+	font-size: 18px;
+	display: block;
+	background-color: #F597A4;
+	width: 400px;
+  	padding: 12px 20px;
+	margin: 8px 0;
+	border: 3px solid #F597A4;
+	color: #019415;
+	border-radius: 4px;
+}
+
+input::placeholder {
+	color: gray;
+}
+
+.client-info input:focus {
+	border: 3px solid #F56E98;
+}
+
+textarea {
+	font-family: 'krabby_pattyregular';
+	font-size: 18px;
+	width: 445px;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 3px solid #F56E98;
+	border-radius: 4px;
+	background-color: #F597A4;
+	resize: none;
+	color: #019415;
+  }
+
+textarea::placeholder {
+	color: gray;
+  }
+
+select {
+	font-family: 'krabby_pattyregular';
+	font-size: 18px;
+	width: 446px;
+	padding: 16px 20px;
+	border: none;
+	border-radius: 4px;
+	background-color: #F597A4;
+	color: #019415;
+  }
+
+  input[type=submit], input[type=reset] {
+	font-family: 'krabby_pattyregular';
+	font-size: 20px;
+	background-color: #F597A4;
+	border: none;
+	color: #019415;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+
+.toppings input {
+	display: inline;
+}
