@@ -23,7 +23,7 @@
           <input type="text" placeholder="Address 2" name="add2">
           <input type="text" placeholder="City" name="city" required>
           <select name="state" required>
-              <option selected disabled hidden style='display: none' value=''></option>
+            <option selected disabled hidden style='display: none' value=''>State</option>
             <option value="Alabama">Alabama</option>
             <option value="Alaska">Alaska</option>
             <option value="Arizona">Arizona</option> 
@@ -80,28 +80,58 @@
           <input type="text" placeholder="Email" name="email" required>
           <textarea name="comments" cols="30" rows="10" placeholder="Comments"></textarea>
         </div>
+        <h2>Choose your favs!</h2>
         <div class="toppings">
-          <input type="checkbox" value="olives" name="toppings[]">Olives
-          <input type="checkbox" value="parmesan" name="toppings[]">Parmesan Cheese
-          <input type="checkbox" value="chicken" name="toppings[]">Grilled Chicken
-          <input type="checkbox" value="pepperoni" name="toppings[]">Pepperoni
-          <input type="checkbox" value="mushrooms" name="toppings[]">Mushrooms
-          <input type="checkbox" value="tomato" name="toppings[]">Tomato
-          <input type="checkbox" value="pineapple" name="toppings[]">Pineapple
-          <input type="checkbox" value="cheddar" name="toppings[]">Cheddar Cheese
-          <input type="checkbox" value="bacon" name="toppings[]">Bacon
-          <img src="img/onion.svg" alt="onion">
-          <input type="checkbox" value="onion" name="toppings[]">Onion
+          <div>
+            <label><input type="checkbox" value="olives" name="toppings[]">Olives</label>
+            <img src="img/olives.svg" alt="olives">
+          </div>  
+          <div>
+            <label><input type="checkbox" value="parmesan" name="toppings[]">Parmesan Cheese</label>
+            <img src="img/cheese.svg" alt="olives">
+          </div>
+          <div>
+            <label><input type="checkbox" value="chicken" name="toppings[]">Grilled Chicken</label>
+            <img src="img/chicken.svg" alt="olives">
+          </div>
+          <div>
+            <label><input type="checkbox" value="pepperoni" name="toppings[]">Pepperoni</label>
+            <img src="img/pepperoni.svg" alt="olives">
+          </div>
+          <div>
+            <label><input type="checkbox" value="mushrooms" name="toppings[]">Mushrooms</label>
+            <img src="img/mushrooms.svg" alt="olives">
+          </div>
+          <div>
+            <label><input type="checkbox" value="tomato" name="toppings[]">Tomato</label>
+            <img src="img/tomato.svg" alt="olives">
+          </div>
+          <div>
+            <label><input type="checkbox" value="pineapple" name="toppings[]">Pineapple</label>
+            <img src="img/pineapple.svg" alt="olives">
+          </div>
+          <div>
+            <label><input type="checkbox" value="cheddar" name="toppings[]">Cheddar Cheese</label>
+            <img src="img/cheese (1).svg" alt="olives">
+          </div>
+          <div>
+            <label><input type="checkbox" value="bacon" name="toppings[]">Bacon</label>
+            <img src="img/bacon.svg" alt="olives">
+          </div>
+          <div>
+              <label><input type="checkbox" value="onion" name="toppings[]">Onion</label>
+              <img src="img/onion.svg" alt="onion">
+          </div>
         </div>
 
         
         
-        
-        <input type="radio" value="thin" name="crust">Original
-        <input type="radio" value="thin" name="crust">Thin
-        <input type="radio" value="thin" name="crust">Pan
-        <input type="radio" value="thin" name="crust">Gluten-Free
-        
+        <div class="crust">
+          <label><input type="radio" value="thin" name="crust">Original</label>
+          <label><input type="radio" value="thin" name="crust">Thin</label>
+          <label><input type="radio" value="thin" name="crust">Pan</label>
+          <label><input type="radio" value="thin" name="crust">Gluten-Free</label>
+        </div>
         <select name="size" id="">
           <option value="Small">Small</option>
           <option value="Medium">Medium</option>

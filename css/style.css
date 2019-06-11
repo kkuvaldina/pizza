@@ -7,7 +7,7 @@
 }
 
 .wrapper {
-	margin: 20px 100px;
+	margin: 20px 70px;
 }
 
 html {
@@ -15,9 +15,11 @@ html {
 	font-family: 'krabby_pattyregular';
 	font-size: 25px;
 	color: #383ADE;
+	text-shadow: 1px 1px 2px #019415;
 }
 
-h1 {
+
+h1, h2 {
 	text-align: center
 }
 
@@ -53,32 +55,37 @@ ul.menu li a:hover, ul.menu li a.active {
 	transition-duration: 500ms;
 	background-image: url("../img/starfish.svg");
 	background-repeat: no-repeat;
-	font-weight: bold
+	font-weight: bold;
+	text-shadow: none;
 }
 
+.client-info {
+	margin-bottom: 25px;
+}
 
-.client-info input[type=text] {
+input[type=text] {
 	font-family: 'krabby_pattyregular';
 	font-size: 18px;
 	display: block;
 	background-color: #F597A4;
 	width: 400px;
   	padding: 12px 20px;
-	margin: 8px 0;
 	border: 3px solid #F597A4;
 	color: #019415;
 	border-radius: 4px;
+	margin: 10px auto;
 }
 
 input::placeholder {
 	color: gray;
 }
 
-.client-info input:focus {
+input:focus {
 	border: 3px solid #F56E98;
 }
 
 textarea {
+	display: block;
 	font-family: 'krabby_pattyregular';
 	font-size: 18px;
 	width: 445px;
@@ -90,6 +97,7 @@ textarea {
 	background-color: #F597A4;
 	resize: none;
 	color: #019415;
+	margin: 0 auto;
   }
 
 textarea::placeholder {
@@ -97,6 +105,7 @@ textarea::placeholder {
   }
 
 select {
+	display: block;
 	font-family: 'krabby_pattyregular';
 	font-size: 18px;
 	width: 446px;
@@ -105,9 +114,19 @@ select {
 	border-radius: 4px;
 	background-color: #F597A4;
 	color: #019415;
+	margin: 0 auto;
   }
 
-  input[type=submit], input[type=reset] {
+option {
+	color: gray;
+  }
+
+select:invalid,
+select option[value=""] {
+	color: gray;
+  }
+
+input[type=submit], input[type=reset] {
 	font-family: 'krabby_pattyregular';
 	font-size: 20px;
 	background-color: #F597A4;
@@ -119,6 +138,38 @@ select {
 	cursor: pointer;
   }
 
-.toppings input {
-	display: inline;
+.toppings {
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	margin: 0 auto;
+	background-color: #F597A4;
+	border: 3px solid #F56E98;
+	padding: 20px 10px;
+	border-radius: 5px;
+	flex-wrap: wrap;
+	height: 500px;
 }
+
+.toppings img {
+	max-width: 80px;
+}
+
+.toppings div {
+	
+}
+
+
+
+input[type=checkbox],input[type=radio]  {
+	cursor: pointer;
+	
+}
+
+label {
+	text-shadow: 1px 1px 2px #019415;
+}
+
+label:hover {
+	cursor:pointer;
+   }
