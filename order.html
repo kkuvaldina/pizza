@@ -13,8 +13,9 @@
         <li><a href="about.html">About</a></li>
         <li><a class="active" href="order.html">Order</a></li>
       </ul>
-      <h1>Order our Krusty Krab Pizza!</h1>
+      <h1>Order our Krusty Krab Pizza Now!</h1>
       <img src="img/sponge-bob.gif" alt="sponge-bob" class="sponge-bob">
+      <p class="contact-p"> Enjoy Our Free Delivery Or Pick Your Order Up From The Restaurant! Just Fill The Form Bellow And Get Your Hot And Delicious Pizza! </p>
       <form class="order-info" action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="post">
         <h2>Where Do You Want To Enjoy Your Pizza? </h2>
         <div class="client-info">
@@ -135,12 +136,14 @@
           <label><input type="radio" value="thin" name="crust">Gluten-Free</label>
         </div>
         <h2>What's size?</h2>
-        <select name="size" id="">
-          <option value="Small">Small</option>
-          <option value="Medium">Medium</option>
-          <option value="Large">Large</option>
-          <option value="Large">Extra Large</option>
-        </select>
+        <div class="size">
+          <select name="size" id="size">
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="Large">Extra Large</option>
+          </select>
+        </div>
         
         <div class="btn">
           <input type="submit" value="Submit">
