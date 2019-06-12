@@ -16,6 +16,7 @@
       <h1>Order our Krusty Krab Pizza!</h1>
       <img src="img/sponge-bob.gif" alt="sponge-bob" class="sponge-bob">
       <form class="order-info" action="http://www.stonecoldprofessor.com/1430/pizza-form/order-process.php" method="post">
+        <h2>Where Do You Want To Enjoy Your Pizza? </h2>
         <div class="client-info">
           <input type="text" placeholder="First Name" name="first">
           <input type="text" placeholder="Last Name" name="last">
@@ -80,58 +81,60 @@
           <input type="text" placeholder="Email" name="email" required>
           <textarea name="comments" cols="30" rows="10" placeholder="Comments"></textarea>
         </div>
+
         <h2>Choose your favs!</h2>
         <div class="toppings">
           <div>
-            <label><input type="checkbox" value="olives" name="toppings[]">Olives</label>
-            <img src="img/olives.svg" alt="olives">
+            <label><input type="checkbox" value="olives" name="toppings[]">Olives
+            <img src="img/olives.svg" alt="olives"></label>
           </div>  
           <div>
-            <label><input type="checkbox" value="parmesan" name="toppings[]">Parmesan Cheese</label>
-            <img src="img/cheese.svg" alt="olives">
+            <label><input type="checkbox" value="parmesan" name="toppings[]">Parmesan Cheese
+            <img src="img/cheese.svg" alt="olives"></label>
           </div>
           <div>
-            <label><input type="checkbox" value="chicken" name="toppings[]">Grilled Chicken</label>
-            <img src="img/chicken.svg" alt="olives">
+            <label><input type="checkbox" value="chicken" name="toppings[]">Grilled Chicken
+            <img src="img/chicken.svg" alt="olives"></label>
           </div>
           <div>
-            <label><input type="checkbox" value="pepperoni" name="toppings[]">Pepperoni</label>
-            <img src="img/pepperoni.svg" alt="olives">
+            <label><input type="checkbox" value="pepperoni" name="toppings[]">Pepperoni
+            <img src="img/pepperoni.svg" alt="olives"></label>
           </div>
           <div>
-            <label><input type="checkbox" value="mushrooms" name="toppings[]">Mushrooms</label>
-            <img src="img/mushrooms.svg" alt="olives">
+            <label><input type="checkbox" value="mushrooms" name="toppings[]">Mushrooms
+            <img src="img/mushrooms.svg" alt="olives"></label>
           </div>
           <div>
-            <label><input type="checkbox" value="tomato" name="toppings[]">Tomato</label>
-            <img src="img/tomato.svg" alt="olives">
+            <label><input type="checkbox" value="tomato" name="toppings[]">Tomato
+            <img src="img/tomato.svg" alt="olives"></label>
           </div>
           <div>
-            <label><input type="checkbox" value="pineapple" name="toppings[]">Pineapple</label>
-            <img src="img/pineapple.svg" alt="olives">
+            <label><input type="checkbox" value="pineapple" name="toppings[]">Pineapple
+            <img src="img/pineapple.svg" alt="olives"></label>
           </div>
           <div>
-            <label><input type="checkbox" value="cheddar" name="toppings[]">Cheddar Cheese</label>
-            <img src="img/cheese (1).svg" alt="olives">
+            <label><input type="checkbox" value="cheddar" name="toppings[]">Cheddar cheese
+            <img src="img/cheese (1).svg" alt="olives"></label>
           </div>
           <div>
-            <label><input type="checkbox" value="bacon" name="toppings[]">Bacon</label>
-            <img src="img/bacon.svg" alt="olives">
+            <label><input type="checkbox" value="bacon" name="toppings[]">Bacon
+            <img src="img/bacon.svg" alt="olives"></label>
           </div>
           <div>
-              <label><input type="checkbox" value="onion" name="toppings[]">Onion</label>
-              <img src="img/onion.svg" alt="onion">
+              <label><input type="checkbox" value="onion" name="toppings[]">Onion
+              <img src="img/onion.svg" alt="onion"></label>
           </div>
         </div>
 
         
-        
+        <h2>How Do You Want Your Pizza?</h2>
         <div class="crust">
           <label><input type="radio" value="thin" name="crust">Original</label>
           <label><input type="radio" value="thin" name="crust">Thin</label>
           <label><input type="radio" value="thin" name="crust">Pan</label>
           <label><input type="radio" value="thin" name="crust">Gluten-Free</label>
         </div>
+        <h2>What's size?</h2>
         <select name="size" id="">
           <option value="Small">Small</option>
           <option value="Medium">Medium</option>
@@ -139,8 +142,10 @@
           <option value="Large">Extra Large</option>
         </select>
         
-        <input type="submit" value="Submit">
-        <input type="reset" value="Clear">
+        <div class="btn">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Clear">
+        </div>
       </form>
     </div>
   </body>

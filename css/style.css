@@ -15,12 +15,13 @@ html {
 	font-family: 'krabby_pattyregular';
 	font-size: 25px;
 	color: #383ADE;
-	text-shadow: 1px 1px 2px #019415;
+	text-shadow: 1px 1px 2px #ffffff;
 }
 
 
 h1, h2 {
-	text-align: center
+	text-align: center;
+	margin-top: 50px;
 }
 
 .menu {
@@ -51,12 +52,12 @@ ul.menu li a {
 
 ul.menu li a:hover, ul.menu li a.active {
 	color: #019415;
+	text-shadow: 1px 1px 2px #ffffff;
 	cursor: pointer;
 	transition-duration: 500ms;
 	background-image: url("../img/starfish.svg");
 	background-repeat: no-repeat;
 	font-weight: bold;
-	text-shadow: none;
 }
 
 .client-info {
@@ -127,36 +128,65 @@ select option[value=""] {
   }
 
 input[type=submit], input[type=reset] {
+	
 	font-family: 'krabby_pattyregular';
 	font-size: 20px;
-	background-color: #F597A4;
+	background-color: #F5B425;
 	border: none;
 	color: #019415;
 	padding: 16px 32px;
 	text-decoration: none;
 	margin: 4px 2px;
 	cursor: pointer;
+	text-shadow: 1px 1px 2px #ffffff;
+	margin: 20px 20px 0 0;
+  
   }
+
+  input[type=submit] {
+	color: #F5B425;
+	background-color: #019415;
+	text-shadow: none;
+  }
+
+  input[type=submit]:hover, input[type=reset]:hover {
+	border-radius: 7px;
+	box-shadow: 0 0 6px #ffffff;
+	transition-duration: 500ms;
+  }
+
+.btn {
+	display: flex;
+	justify-content: center;
+	
+}
 
 .toppings {
 	display: flex;
-	width: 50%;
+	width: 70%;
 	justify-content: center;
 	margin: 0 auto;
 	background-color: #F597A4;
+	opacity: 0.92;
 	border: 3px solid #F56E98;
 	padding: 20px 10px;
 	border-radius: 5px;
 	flex-wrap: wrap;
-	height: 500px;
+	min-height: 400px;
+	color: #019415;
 }
 
 .toppings img {
 	max-width: 80px;
+    padding: 10px 0 0 20px;
+
 }
 
 .toppings div {
-	
+	max-width: 155px;
+	min-width: 110px;
+	margin: 10px 10px 0 0;
+	align-items: center;
 }
 
 
@@ -167,9 +197,22 @@ input[type=checkbox],input[type=radio]  {
 }
 
 label {
-	text-shadow: 1px 1px 2px #019415;
+	text-shadow: 1px 1px 2px #ffffff;;
 }
 
-label:hover {
+label:hover, .toppings img:hover {
 	cursor:pointer;
+
    }
+
+.crust {
+	display: flex;
+	width: 70%;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.crust label {
+	margin-right: 25px;
+	color: #019415;
+}
